@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+a{  
+    color:white;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 30px;
+}
+
+p ul li{
+    font-size: 18px;
+}
+
+a:hover{
+    color: lightblue;
+}
+
+/*reset do css e coisas que afetam o site inteiro foram*/
+
+#Back{
+    color: white;
+    background-color: black;
+    border-bottom: 3px solid blue;
+    box-shadow: 0 0 3em black;
+}
+
+.darkmode--activated #Back {
+    mix-blend-mode: difference;
+}
+
+#MyName{
+display: flex;
+align-items: center;
+justify-content: space-around;
+padding-top: 30px;
+font-size: 19px;
+padding-bottom: 10px;
+padding-left:20px;
+}
+
+#EuImg{
+    width: 65px;
+    border: solid;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.HeaderItens{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2%;
+    width: 85%;
+    padding-right: 20px;
+}
+
+/*itens da nav*/
+
+
+#SchoolBoxRow{ 
+    display: flex;
+    align-items: center;
+   justify-content: space-around;
+}
+
+.SchoolBox{
+    width: 30%;
+    height: 50%;
+    margin-top: 10px;
+}
+
+.ImgSchool{
+    width:  300px;
+    padding-left: 35%;
+    padding-bottom: 1%;
+    
+}
+
+.ImgSchool:hover{
+    transform: translateY(0px);
+    animation: float 1.8s ease-in-out infinite;
+}
+
+@keyframes float{
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+/*A aba de formações foi estilizada com o css acima*/
+
+.TextCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom:20px;
+}
+
+.ProjectsText{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-align: left;
+    padding-left: 5%;
+    width: 90%;
+    height: 100%;
+    margin-bottom: 10px;
+    
+}
+
+.ProjectsText a{
+    color: black;
+    font-weight: bold;
+}
+
+.ProjectsText a:hover{
+    color: lightblue;
+}
+
+#Reset-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+}
+
+#Reset-button button{
+    width: 200px;
+    height: 40px;
+    background-color: red;
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+}
+
+.game-board {
+    width: 100%;
+    height: 200px;
+    border-bottom: 15px solid green;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(lightblue,white);
+}
+
+.monster {
+    position: absolute;
+    bottom: -2px;
+    width: 60px;
+    opacity: 0;
+}
+
+.salsicha {
+    width: 90px;
+    position: absolute;
+    bottom: 0px;
+    opacity: 0;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 110px;
+    }
+
+    60% {
+        bottom: 110px;
+    }
+
+    70% {
+        bottom: 110px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes monster-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    } 
+}
+
+/*O css acima estiliza os projetos e realiza as animações do joguinho*/
+
+
+.flexBox{
+    display: flex ;
+    justify-content: space-around;
+}
+
+#CertificateImg{
+    width: 650px;
+    padding-top: 60px;
+    padding-left: 20px ;
+}
+.CertificationsList ul li{
+    list-style:disc;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+
+/*a parte de certificações foram estilizadas com o css acima*/
+
+#yellow{
+    color: blue
+}
+.size{
+    font-size: 25px;
+}
+
+/*O css acima estiliza a aba de experiencias*/
+
+.TextFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    width: 90%;
+}
+
+/* O css acima estiliza o sobre*/
+
+.TextAbout{
+    font-size: 20px;
+}
+
+footer{
+    background-color: black;
+    border-top: 3px solid blue;
+}
+
+.darkmode--activated footer {
+    mix-blend-mode: difference;
+}
+.ImgSocial{
+    filter: invert(50%);
+    width: 35px;
+    padding-left: 20px;
+   margin-right: 5px;
+}
+
+#EndText{
+    color: white;
+    padding-left: 20px;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
+    <title>Curriculo</title>
+</head>
+<header  id="Back">
+    <nav>
+        <div id="MyName">
+            <img src="./Images/Eu.jpg" id="EuImg" alt="Uma foto minha">
+            <h3>Meu Curriculo</h3>
+            <ul class="HeaderItens">
+                <li><a href="#SchoolId">Formação </a></li>
+                <li><a href="#ProjectsId">Projetos</a></li>
+                <li><a href="#CertificatesId">Certificados</a></li>
+                <li><a href="#ExpId">Experiências</a></li>
+                <li><a href="#AboutId">Sobre</a></li>
+            </ul>
+        </div>      
+    </nav>  
+</header>
+<body>
+    <main>
+        <section id="SchoolId">
+                <div class="TextCenter"> 
+                    <h1>Formação</h1>
+                </div>  
+                <div id="SchoolBoxRow">
+                    <div class="SchoolBox">
+                        <a href="https://estacio.br" target="_blank"><img class="ImgSchool" src="./Images/icone_estacio_400x400.png" alt="Logo da faculdade estacio"></a>
+                         <p>Sou um estudante de engenharia de software no primeiro semestre na faculdade estacio com bolsa pelo enem o graduação começou em 26 de abril de 2022 e terminara em 2025.</p>
+                   </div>
+                   <div class="SchoolBox">
+                        <a href="https://www.colegiopaloma.com.br/cp_site/" target="_blank"><img class="ImgSchool" src="./Images/Paloma.png" alt="Logo do colegiopaloma"></a>
+                         <p>Estudei meu ensino medio praticamente todo no colegio paloma, tendo começado a minha formação em 2005 e tendo terminado em dezembro de 2021.</p>
+                   </div>                 
+                   <div class="SchoolBox">
+                       <a href="https://www.educacao.df.gov.br/cil-2/" target="_blank"><img class="ImgSchool" src="./Images/cil.png.opdownload" alt="Logo do centro de linguas de brasilia"></a> 
+                        <p>Fiz cinco anos de ingles do basico ao avançado no centro de linguas do gama, em tal local fui parabenizado pela minha capacidade com o idioma, o mesmo começou em 2012 e terminou em 2017</p>    
+                   </div>
+                </div>   
+        </section>
+        <section id="ProjectsId">
+            <div class="TextCenter">
+                <h1>Projetos</h1>
+            </div>
+            <div class="ProjectsText">
+                <p>
+                    A maioria dos meus projetos e amarzenado no <a href="https://github.com/Kevyn-lucca"target="_blank">GitHub</a>, no momento estou tentando aprender os basicos dos frameworks bootstrap e angular abaixo tem um projeto basico de um joguinho, divirta-se! mas
+                    não se esqueça de ver o resto do site.
+                </p>            
+            </div>        
+            <div class="game-board">
+                <img src="./Images/mario-gif.gif" class="salsicha">
+                <img src="./Images/cano.webp" class="monster">
+                <div id="Reset-button">
+                    <button onclick="startStuff()">Start</button>
+                </div>
+            </div>
+        </section>
+        <section id="CertificatesId">
+            <div class="TextCenter">
+                <h1>Certificados</h1>
+            </div>
+            <div class="flexBox">
+                  <div class="CertificationsList">
+                <ul>
+                    <li>Instalando e Preparando o Ambiente Angular</li>
+                    <li>A arquitetura de componentes e a gestão da complexidade no front-end</li>
+                    <li>Trabalhando com Páginas SPA com Angular</li>
+                    <li>Introdução ao Angular 8</li>
+                    <li>Introdução Prática ao TypeScript</li>
+                    <li>Introdução à Programação e Pensamento Computacional</li>
+                    <li>Introdução ao TypeScript: Explorando Classes, Tipos e Interfaces</li>
+                    <li>Manipulando a D.O.M. com JavaScript</li>
+                    <li>Trabalhando com Módulos em JavaScriptl</li>
+                    <li>Orientação a objetos</li>
+                    <li>Debugging e Error Handling</li>
+                    <li>Map, Filter e Reduce</li>
+                    <li>Javascript Assíncrono</li>
+                    <li>Introdução ao JavaScript</li>
+                    <li>Posicionando elementos com Flexbox em CSS</li>
+                    <li>Sintaxe Básica em JavaScript</li>
+                    <li>Introdução a criação de websites com HTML5 e CSS3</li>
+                    <li>Primeiros passos para desenvolvimento web</li>
+                    <li>Introdução ao Git e ao GitHub</li>
+                    <li>Lógica de Programação Essencial</li>
+                </ul>
+            </div>
+            <div>
+                <img id="CertificateImg" src="./Images/Certificado.jpg">
+            </div>
+            </div>
+        </section>
+        <section id="ExpId">
+            <div class="TextCenter">
+                <h1>Experiências</h1>
+            </div>
+            <div class="TextCenter size">
+                <p>No momento não tenho nenhuma experiência,<span id="yellow"> vamos trabalhar juntos.</span></p>
+            </div>    
+        </section>
+        <section id="AboutId">
+            <div class="TextCenter About">
+              <h1>Sobre</h1>
+            </div>
+        <div class="TextCenter TextFlex TextAbout">
+            <p>
+                Estudante de engenharia de software com interesse pela área de desenvolvedor. Grande disposição para o aprendizado e a aplicação de conhecimentos e habilidades interpessoais no âmbito profissional, buscando crescimento constante
+                Adoro leitura, meus livros favoritos são: o guia do mochileiro das galaxias, 1984, A maquina do tempo, Jornada ao Oeste e uma divina comedia.
+            </p>
+        </div>
+        </section>
+    </main>   
+    <script src="./js/script.js"></script>
+</body>
+<footer>
+          <img class= "ImgSocial"src="./Images/github.png"><a href="https://github.com/Kevyn-lucca" target="_blank">Meu github</a>
+          <div>
+            <img class="ImgSocial" src="./Images/linkedin.png"><a href="https://www.linkedin.com/in/kevyn-lucca-vieira-de-almeida-813503232/" target="_blank">Meu linkedin</a> 
+          </div>
+          <div id="EndText">
+            &copy; Kevyn Lucca Vieira de Almeida 2022  
+          </div>
+</html>
